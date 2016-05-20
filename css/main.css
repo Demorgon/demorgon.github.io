@@ -1,0 +1,301 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+}
+.hidden {
+	display: none;
+}
+.carousel img {
+	width: 100%;
+	height: auto;
+}
+.parallax {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	position: relative;
+}
+header {
+    background-image: url(../img/top_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 644px;
+    position: relative;
+    font-family: "BebasBold";
+}
+
+header a{
+    color: #fff;
+}
+
+.top_line {
+    min-height: 97px;
+    -webkit-box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+    box-shadow: rgba(255,255,255,.15) 0 0 0 1px;
+    width: 100%;
+    background-color: rgba(0,0,0,.65);
+    padding: 22px 0px;
+}
+
+.top_addr {
+    padding-left: 40px;
+    background-image: url(../img/top_map.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    line-height: 25px;
+}
+
+.top_addr strong {
+    display: block;
+    color: #d10000;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.top_line a{
+    font-size: 21px;
+    border-bottom: #fff dashed 1px;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+.top_line a:hover{
+    border-bottom: transparent dashed 1px;  
+}
+.top_line .logo{
+    border-bottom: none;
+    position: absolute;
+    margin-top: -20px;
+}
+.top_line .logo:hover{
+    border-bottom: none;
+}
+.logo_wrap{
+    position: relative;
+    margin: auto;
+    width: 249px;
+}
+.ta_right{
+    background-image: none;
+    padding-left: 0px;
+    text-align: right;
+}
+.ta_right span{
+    color: #FFF;
+}
+header h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 68px;
+    font-size: 40px;
+    text-shadow: 0 2px rgba(0,0,0,.55) ;
+    font-family: "BebasBold";
+}
+.button:hover{
+    background-color: #d94c4c;
+}
+.button:active{
+    background-color: #8d0000;
+}
+.button{
+    display: inline-block;
+    background-color: #d10000;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 50px;
+    border-bottom: 4px solid #a70000;
+}
+header .button{
+    margin-right: 20px;
+}
+.st_button{
+    line-height: 18px;
+    padding-left: 60px;
+    padding-top: 7px;
+    text-align: left;
+    background-image: url(../img/camera.png);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+}
+.buttons_top{
+    position: absolute;
+    width: 100%;
+    bottom: 33px;
+}
+.top_mnu{
+    height: 62px;
+    background-color: #242424;
+    -webkit-box-shadow: rgba(255,255,255,.3) 0 0 0 1px;
+    box-shadow: rgba(255,255,255,.15) 0 0 0 1px;
+    font-family: "BebasRegular";
+    text-transform: uppercase;
+}
+.top_mnu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.top_mnu a{
+    color: #fff;
+    font-size: 20px;
+    padding: 0 26px;
+    display: block;
+    line-height: 62px;
+    border-left: #383838 1px solid;
+    
+}
+.top_mnu li{
+    float: left;
+}
+.top_mnu li.active a, .top_mnu li:hover a{
+    background-color: #050505;
+}
+.waranty{
+    cursor: default;
+    color: #fff;
+    float: right;
+    font-size: 15px;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    padding: 3px 5px;
+    line-height: 16px;
+    margin-top: 8px;
+}
+.w_left, .w_right{
+    display: inline-block;
+}
+.w_left span{
+    font-size: 34px;
+    font-family: "BebasBold";
+}
+.w_left{
+    font-family: "BebasBold";
+    font-size: 20px;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 7px;
+}
+.w_right{
+    font-family: "RobotoRegular";
+}
+.main_cats{
+    background-color: #191919;
+    padding: 20px 0 32px;
+}
+.main_cats h2{
+    text-transform: uppercase;
+    color: #c9c9c9;
+    font-family: "BebasRegular";
+    text-align: center;
+    font-size: 40px;
+}
+.main_cats h2 strong{
+    color: #fff;
+}
+.main_cats h2 span{
+    color: #c31515;
+}
+.mc_item{
+    border: #353535 1px solid;
+    border-radius: 2px;
+}
+.mc_wrap{
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+.mc_item_wrap{
+    margin-left: 30px;
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+}
+.mc_item_wrap:first-child{
+    margin-left: 0px;
+}
+.mc_item_wrap a{
+    color: #fff;
+}
+.mc_item span{
+    display: block;
+    height: 85px;
+    width: 130px;
+    margin: 10px auto;
+    background-position: center center;
+    background-image: url(../img/camera.png);
+    background-repeat: no-repeat;
+}
+.mc_item h4{
+    font-weight: normal;
+    font-family: "BebasBold";
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.mc_item_wrap a:hover h4, .mc_item_wrap.active h4{
+    text-decoration: underline;
+    background-color: #2a2a2a;
+}
+.mc_toggle{
+    background-color: #212121;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.mc_item_wrap:hover, .mc_item_wrap.active {
+    background-color: #2a2a2a;
+}
+.mc_item_wrap:hover .mc_toggle, .mc_item_wrap.active .mc_toggle {
+    background-color: #353535;
+}
+.mc_wrap .mc_item_wrap > ul{
+    position: absolute;
+    width: 100%;
+    background-color: #353535;
+    margin-top: 25px;
+    list-style-type: none;
+    padding: 15px 0;
+    z-index: 10;
+    display: none;
+}
+.mc_item_wrap.active > ul li{
+    font-family: "BebasRegular";
+    font-size: 20px;
+    display: inline-block;
+}
+.mc_item_wrap.active > ul li a{
+    padding: 0 10px;
+    text-decoration: underline;
+}
+.mc_item_wrap.active > ul li a:hover{
+    text-decoration: none;
+}
