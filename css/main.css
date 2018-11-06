@@ -38,8 +38,8 @@ p {
     color: var(--text);
 }
 
-img {
-    max-width: 100%
+.img {
+    max-width: 100%;
 }
 
 .frame {
@@ -447,12 +447,68 @@ img {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    padding: 0 150px;
-    margin-bottom: 150px;
+    padding: 0 100px;
+    margin-bottom: 250px;
 }
 
-.case__image {
+.case__image-container {
     width: 60%;
+    height: 700px;
+    position: relative;
+}
+
+.case__image--theme--normal{
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    right: -70px;
+    z-index: -1;
+    display: block;
+}
+.case--theme--normal{
+    position: relative;
+}
+.case--theme--normal:after{
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    background-image: url(../img/octopus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    bottom: -150px;
+    left: -250px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    z-index: -2;
+}
+.case--theme--reverse{
+    position: relative;
+}
+
+.case--theme--reverse:after{
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    background-image: url(../img/octopus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    bottom: -100px;
+    right: -350px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(-40deg);
+    z-index: -2;
+}
+
+.case__image--theme--reverse {
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    left: -70px;
+    z-index: -1;
 }
 
 .case__description {
@@ -483,8 +539,8 @@ img {
 .case__name--theme--normal:after {
     content: "";
     position: absolute;
-    height: 10px;
-    width: 70px;
+    height: 5px;
+    width: 60px;
     background: linear-gradient(135deg, #647DEE, #7F53AC);
     left: 0;
     bottom: -20px;
@@ -493,8 +549,8 @@ img {
 .case__name--theme--reverse:after {
     content: "";
     position: absolute;
-    height: 10px;
-    width: 70px;
+    height: 5px;
+    width: 60px;
     background: linear-gradient(135deg, #647DEE, #7F53AC);
     right: 0;
     bottom: -20px;
@@ -503,6 +559,7 @@ img {
 .case__role {
     margin-bottom: 20px;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .button {
