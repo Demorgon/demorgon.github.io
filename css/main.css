@@ -63,6 +63,22 @@ p {
     width: 40px;
     right: 0;
     top: 0;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .frame--position--bottom {
@@ -455,13 +471,13 @@ p {
 
 .case__image-container {
     width: 60%;
-    height: 700px;
+    height: 600px;
     position: relative;
 }
 
 .case__image--theme--normal {
-    width: 1200px;
-    height: 700px;
+    width: 1100px;
+    height: 600px;
     position: absolute;
     right: -70px;
     z-index: -1;
@@ -509,8 +525,8 @@ p {
 }
 
 .case__image--theme--reverse {
-    width: 1200px;
-    height: 700px;
+    width: 1100px;
+    height: 600px;
     position: absolute;
     left: -70px;
     z-index: -1;
