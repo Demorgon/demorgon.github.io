@@ -1,2 +1,2 @@
 # demorgon.github.io
-demorgon.github.io
+http://demorgon.github.io/
