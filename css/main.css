@@ -12,18 +12,13 @@
 }
 
 ::-moz-selection {
-    background: var(--black);
+    background: #000;
 
 }
 
 ::selection {
     background: #000;
     color: #fff;
-}
-
-:root {
-    --main: #f7f7f7;
-    --text: #262626;
 }
 
 html {
@@ -34,8 +29,8 @@ body {
     font-family: sans-serif;
     min-width: 320px;
     overflow-x: hidden;
-    background-color: var(--main);
-    color: var(--text);
+    background-color: #f7f7f7;
+    color: #262626;
     font-family: 'Source Sans Pro', sans-serif;
 
 }
@@ -49,7 +44,7 @@ body {
 
 a,
 p {
-    color: var(--text);
+    color: #262626;
 }
 
 .img {
@@ -246,7 +241,7 @@ p {
 
 .arrow {
     text-align: center;
-    color: var(--text);
+    color: #262626;
 }
 
 .hero {
