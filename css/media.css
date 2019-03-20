@@ -13,12 +13,9 @@
     }
 
     .case__image-container {
-        height: 700px;
-    }
-
-    .case__image {
         width: 1321px;
         height: 700px;
+        padding: 52px 203px 76px 203px;
     }
 
     .section--theme--what-i-do:before {
@@ -54,7 +51,7 @@
     }
 }
 
-@media only screen and (min-width: 1601px) and (max-width: 1750px) {
+@media only screen and (min-width: 1601px) {
     .section {
         padding: 0 200px;
     }
@@ -76,11 +73,15 @@
         bottom: -100px;
         right: -650px;
     }
+
+    .case__name {
+        font-size: 3rem;
+    }
 }
 
-@media only screen and (min-width: 1500px) and (max-width: 1600px) {
+@media only screen and (min-width: 1441px) {
     .section {
-        padding: 0 150px;
+        padding: 0 50px;
     }
 
     .colored-square {
@@ -130,13 +131,9 @@
     }
 
     .case__image-container {
-        width: 50%;
-        height: 500px;
-    }
-
-    .case__image {
         width: 944px;
         height: 500px;
+        padding: 36px 145px 54px 145px;
     }
 
     .case__description {
@@ -184,12 +181,9 @@
     }
 
     .case__image-container {
+        width: 849px;
         height: 450px;
-    }
-
-    .case__image {
-        width: 755px;
-        height: 400px;
+        padding: 33px 130px 49px 130px;
     }
 
     .case--theme--normal::after {
@@ -273,12 +267,9 @@
     }
 
     .case__image-container {
-        height: 400px;
-    }
-
-    .case__image {
         width: 755px;
         height: 400px;
+        padding: 28px 116px 43px 116px;
     }
 
     .case__name {
@@ -308,17 +299,19 @@
         margin-right: 0px;
     }
 
+    .case {
+        padding: 0 5px;
+        margin-bottom: 200px;
+    }
+
     .case__name {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     .case__image-container {
-        height: 350px;
-    }
-
-    .case__image {
         width: 661px;
         height: 350px;
+        padding: 26px 101px 38px 101px;
     }
 
     .case--theme--normal::after {
@@ -395,23 +388,23 @@
     }
 
     .case__image-container {
-        width: 100%;
-        height: 500px;
+        width: 560px;
+        height: 297px;
         margin-bottom: 25px;
+        padding: 25px 118px 44px 118px;
+        padding: 22px 86px 32px 86px;
+        -ms-flex-item-align: center;
+        align-self: center;
     }
 
-    .case__image {
-        width: 945px;
-        height: 500px;
+    .case__image-container--reverse {
+        margin-right: 0%;
+        margin-left: 0%;
     }
 
-    .case__image--theme--reverse {
-        right: -300px;
-        left: auto;
-    }
-
-    .case__image--theme--normal {
-        left: -300px;
+    .case__image-container--normal {
+        margin-right: 0%;
+        margin-left: 0%;
     }
 
     .case__description {
@@ -447,25 +440,6 @@
         width: 600px;
         height: 450px;
         bottom: -250px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .case__image-container {
-        height: 400px;
-    }
-
-    .case__image {
-        width: 756px;
-        height: 400px;
-    }
-
-    .case__image--theme--reverse {
-        right: -250px;
-    }
-
-    .case__image--theme--normal {
-        left: -250px;
     }
 }
 
@@ -519,23 +493,6 @@
         bottom: -250px;
     }
 
-    .case__image-container {
-        height: 300px;
-    }
-
-    .case__image {
-        width: 567px;
-        height: 300px;
-    }
-
-    .case__image--theme--reverse {
-        right: -175px;
-    }
-
-    .case__image--theme--normal {
-        left: -175px;
-    }
-
     .case__role {
         font-size: 0.625rem;
     }
@@ -557,21 +514,11 @@
 }
 
 @media only screen and (max-width: 390px) {
-    .case__image-container {
-        height: 250px;
-    }
 
-    .case__image {
+    .case__image-container {
         width: 472px;
         height: 250px;
-    }
-
-    .case__image--theme--reverse {
-        right: -150px;
-    }
-
-    .case__image--theme--normal {
-        left: -150px;
+        padding: 18px 72px 27px 72px;
     }
 
     .footer {
@@ -583,24 +530,19 @@
         height: 300px;
         bottom: -150px;
     }
+
+    .case__button {
+        width: 150px;
+        height: 50px;
+        margin-right: 5px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     .case__image-container {
-        height: 200px;
-    }
-
-    .case__image {
-        width: 378px;
-        height: 200px;
-    }
-
-    .case__image--theme--reverse {
-        right: -120px;
-    }
-
-    .case__image--theme--normal {
-        left: -120px;
+        width: 377px;
+        height: 220px;
+        padding: 25px 58px 31px 58px;
     }
 
     .mail__text {

@@ -23,7 +23,7 @@
 
 html {
     font-size: 16px;
-    
+
 }
 
 body {
@@ -46,6 +46,14 @@ body {
 a,
 p {
     color: #262626;
+}
+
+h1,
+h2,
+h3 {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
 }
 
 .img {
@@ -153,6 +161,7 @@ p {
 .section {
     padding: 0px 40px;
     max-width: 1920px;
+    overflow: visible;
 }
 
 .section--theme--hero {
@@ -469,22 +478,51 @@ p {
 }
 
 .case__image-container {
-    width: 60%;
+    width: 1132px;
     height: 600px;
     position: relative;
+    background-image: url(../img/work__bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 44px 174px 65px 174px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.case__image-container--normal {
+    margin-left: -20%;
+    margin-right: -5%;
+}
+
+.case__image-container--reverse {
+    margin-right: -20%;
+    margin-left: -5%;
+}
+
+.case__image-container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: #eeeeee;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .case__image {
-    width: 1132px;
-    height: 600px;
+    width: 100%;
+    top: 0%;
+    max-width: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     display: block;
 }
 
-.case__image--theme--normal {
-    right: -70px;
-}
+
 
 .case--theme--normal {
     position: relative;
@@ -526,10 +564,6 @@ p {
     z-index: -2;
 }
 
-.case__image--theme--reverse {
-    left: -70px;
-}
-
 .case__description {
     width: 40%;
     display: -webkit-box;
@@ -547,7 +581,7 @@ p {
 .case__name {
     font-family: 'Vollkorn', serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.2em;
     margin-bottom: 1.2em;
@@ -582,6 +616,7 @@ p {
 }
 
 .button {
+    display: inline-block;
     border: none;
     background: none;
     cursor: pointer;
@@ -593,6 +628,7 @@ p {
     width: 180px;
     height: 50px;
     position: relative;
+    margin-right: 20px;
     overflow: hidden;
     border-width: 3px 3px 3px 3px;
     border-style: solid;
@@ -741,4 +777,33 @@ p {
     max-width: 1920px;
     margin: auto;
     overflow: hidden;
+}
+
+.image-container__wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.buttons-container--works {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 00%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
